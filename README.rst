@@ -199,7 +199,7 @@ Run all tests using -
 
     tox
 
-The tox tests include code style checks via pep8 and pylint.
+The tox tests include code style checks via pycodestyle and pylint.
 
 
 Copyright and License
