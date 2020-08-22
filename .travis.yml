@@ -21,4 +21,8 @@ script:
   - tox
 
 after_success:
-  - if [ "-x$TOX_ENV" = "xcoverage" ]; then coveralls; fi
+  - |
+    if [ "$TOX_ENV" = "coverage" ]; then
+      pip install coveralls
+      coveralls
+    fi
